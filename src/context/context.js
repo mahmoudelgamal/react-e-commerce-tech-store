@@ -7,9 +7,10 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = { 
         sidebarOpen: false,
-        sideCartOpen: false,
+        cartOpen: true,
         cartItems: 0,
-        links: LinksData
+        links: LinksData,
+        cart: [],
     }
     // hande Sidebar
     handleSidebar = () => {
@@ -17,15 +18,15 @@ class ProductProvider extends Component {
     }
     // hande Cart
     handleCart = () => {
-        this.setState({sideCartOpen:!this.state.sideCartOpen})
+        this.setState({cartOpen:!this.state.cartOpen})
     }
     // close cart
     closeCart = () => {
-        this.setState({sideCartOpen:false})
+        this.setState({cartOpen:false})
     }
     // open cart
     openCart = () => {
-        this.setState({sideCartOpen:true})
+        this.setState({cartOpen:true})
     }
     render() { 
         return(
