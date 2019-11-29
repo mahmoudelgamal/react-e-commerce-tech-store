@@ -7,7 +7,7 @@ export const LinksData = [
     {
         id: 2,
         text: 'products',
-        path: '/'
+        path: '/products'
     },
     {
         id: 3,
