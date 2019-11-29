@@ -6,16 +6,21 @@ export const LinksData = [
     },
     {
         id: 2,
+        text: 'products',
+        path: '/'
+    },
+    {
+        id: 3,
         text: 'contact',
         path: '/contact'
     },
     {
-        id: 3,
+        id: 4,
         text: 'about',
         path: '/about'
     },
     {
-        id: 4,
+        id: 5,
         text: 'cart',
         path: '/cart'
     },
