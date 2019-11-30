@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Title";
 import aboutBcg from "../../images/aboutBcg.jpeg";
+import {Link} from 'react-router-dom'
 export default function Info() {
   return (
     <section className="py-5">
@@ -26,13 +27,13 @@ export default function Info() {
               illo obcaecati non asperiores repellendus alias, nostrum aliquid
               ad eaque ratione!
             </p>
-            <button
+            <Link to="/contact"
               className="main-link"
               type="button"
               style={{ marginTop: "2rem" }}
             >
               more info
-            </button>
+            </Link>
           </div>
         </div>
       </div>

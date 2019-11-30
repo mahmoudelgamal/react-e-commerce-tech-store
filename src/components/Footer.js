@@ -7,25 +7,25 @@ export default function Footer() {
         <ProductConsumer>
         {value => {
             return (
-            <FooterWrapper>
-                <div className="container py-3">
-                <div className="row">
-                    <div className="col-md-6">
-                    <p className="text-capitalize">
-                        copyright &copy; tech store {new Date().getFullYear()}. all
-                        rights reserved{" "}
-                    </p>
+                <FooterWrapper>
+                    <div className="container py-3">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <p className="text-capitalize">
+                                    copyright &copy; tech store {new Date().getFullYear()}. all
+                                    rights reserved{" "}
+                                </p>
+                            </div>
+                            <div className="col-md-6 d-flex justify-content-around">
+                                {value.socialIcons.map(item => (
+                                    <a target="_blank" href={item.url} key={item.id}>
+                                    {item.icon}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-around">
-                    {value.socialIcons.map(item => (
-                        <a target="_blank" href={item.url} key={item.id}>
-                        {item.icon}
-                        </a>
-                    ))}
-                    </div>
-                </div>
-                </div>
-            </FooterWrapper>
+                </FooterWrapper>
             );
         }}
         </ProductConsumer>
