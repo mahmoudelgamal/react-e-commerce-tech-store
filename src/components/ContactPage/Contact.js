@@ -18,6 +18,7 @@ export default function Contact() {
                 name="firstName"
                 className="form-control"
                 placeholder="john smith"
+                required
               />
             </div>
             {/* email */}
@@ -27,6 +28,7 @@ export default function Contact() {
                 name="email"
                 className="form-control"
                 placeholder="email@email.com"
+                required
               />
             </div>
             {/* subject */}
