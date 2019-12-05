@@ -11,7 +11,7 @@ export default function HomePage() {
         <Link to="/products" className="main-link" style={{marginTop:'var(--margin-top-large)'}}>all products</Link>
     </Hero>
     <Services />
-      <Featured />
+    <Featured />
     </>
   );  
 }
